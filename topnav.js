@@ -61,7 +61,6 @@ function newWatch() {
   document.getElementById("watchicon").src="/images/icons/hover/watch.png";
   var x = document.getElementById("sfxHover"); 
   x.play();
-  
 }
 
 function oldWatch() {

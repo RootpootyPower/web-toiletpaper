@@ -1,0 +1,21 @@
+.vc {
+    color: #6A008A;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.br {
+    color: #850A60;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.be {
+    color: #003e9b;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}

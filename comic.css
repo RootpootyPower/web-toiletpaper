@@ -1,6 +1,6 @@
 /* sets font */
   body {
-    font-family: "Comic_Sans_MS"
+    font-family: 'Comic Sans MS', 'Comic Sans', "Comic_Sans_MS"
   }
   @font-face {
   font-family: 'Comic_Sans_MS';

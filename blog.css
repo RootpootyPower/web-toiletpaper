@@ -19,3 +19,8 @@ text-align: center
 h3 {
 text-align: center  
 }
+
+.date {
+    color: #00396b;
+    font-style: italic;
+}

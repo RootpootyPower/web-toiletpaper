@@ -1,0 +1,215 @@
+.clickon {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.chargrid {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#maincontent p {
+    margin: 0;
+}
+
+.namebox {
+    margin: 15px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: -moz-linear-gradient(90deg, rgba(150, 0, 50, 0.25), rgba(150, 0, 50, 0));
+    background: -webkit-linear-gradient(90deg, rgba(150, 0, 50, 0.25), rgba(150, 0, 50, 0));
+    background: linear-gradient(90deg, rgba(150, 0, 50, 0.25), rgba(150, 0, 50, 0));
+}
+
+.namebox img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.infobox {
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 25px;
+}
+
+.desc {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.quote {
+    padding-left: 45px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.show a {
+    text-decoration: none;
+}
+
+.chargrid img {
+    padding: 15px;
+    height: 180px;
+}
+
+.i {
+    height: 210px;
+}
+
+/* these classes mean nothing i swear */
+
+.host:hover, .o:hover {
+    background-color: #e46c94;
+}
+
+/*
+.mn {
+    background-color: #b1173b;
+}
+
+.mn:hover {
+    background-color: #840824;
+}
+
+.lg {
+    background-color: #f35858;
+}
+
+.lg:hover {
+    background-color: #c43434;
+}
+
+.al {
+    background-color: #00d9ff;
+}
+
+.al:hover {
+    background-color: #02a6c3;
+}
+
+.pl {
+    background-color: #f4782c;
+}
+
+.pl:hover {
+    background-color: #be520f;
+}
+
+.pc {
+    background-color: #ff3744;
+}
+
+.pc:hover {
+    background-color: #c5131f;
+}
+
+.sa {
+    background-color: #e1f135;
+}
+
+.sa:hover {
+    background-color: #94a200;
+}
+
+.th {
+    background-color: #7a54d8;
+}
+
+.th:hover {
+    background-color: #4a2a9a;
+}
+*/
+
+.mn:hover, .lg:hover, .al:hover, .pl:hover, .pc:hover, .th:hover, .sa:hover {
+    background-color: #e46c94;
+}
+
+a:hover img {
+    filter: brightness(0.5) saturate(2);
+}
+
+/* fix long names */
+@media screen and (min-width: 650px) {
+    .infobox {
+        max-width: 50%;
+    }
+}
+
+/* character grid stuff */
+@media screen and (max-width: 900px) {
+    .i {
+        height: 180px;
+    }
+
+    .chargrid img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .i {
+        height: 150px;
+    }
+
+    .chargrid img {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .i {
+        height: 130px;
+    }
+
+    /* also change padding */
+    .chargrid img {
+        height: 110px;
+        padding: 10px;
+    }
+}
+
+/* keep the teams together */
+@media screen and (max-width: 600px) {
+    .mn, .pl {
+        order: 1;
+    }
+    
+    .lg, .pc {
+        order: 3;
+    }
+
+    .al, .sa {
+        order: 4;
+    }
+
+    .th {
+        order:5;
+    }
+
+}
+
+/* weird exceptions for button pin and motw & rm */
+@media screen and (max-width: 450px) {
+    .th {
+        order: 2;
+    }
+
+    .gay {
+        order: 3;
+    }
+}

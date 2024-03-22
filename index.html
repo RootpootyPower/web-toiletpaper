@@ -6,25 +6,32 @@
     <title>Toilet Paper</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/comic.css">
+    <link rel="stylesheet" href="/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/csi.js"></script>
   </head>
   <body>
-  
-<audio id="sfxHover" type="audio/mpeg">
-<source src="https://files.catbox.moe/61m04g.mp3">
-</audio>
 
-<header>
-<p data-include="/topnav.html"></p> 
-</header>
+<include data="/topnav.html"></include>
 
 <div id="maincontent">
 
   <h1>Welcome to the official Toilet Paper website!</h1>
   
-  <iframe class="right" frameBorder="0" src="/blog/index.html"></iframe>
+  <div class="flexbox">
+    <div class="left">
+      <p class="desc">Toilet Paper is the best show ever. Trust us, we would know. It's like an object show if it wasn't an object show and was good.</p>
+      <p class="desc">Latest videos:</p>
+      <include data="yt.html"></include>
+      <div class="desc links">
+        <a href="https://www.youtube.com/@toiletpaperproductionteam">YouTube</a>
+        <a href="https://twitter.com/toiletpaper_pt">Twitter</a>
+      </div>
+    </div>
+    <iframe class="right" frameBorder="0" src="/blog/index.html"></iframe>
+  </div>
 
+  <!--
   <p>I love Windows XP web development <a href="https://neocities.org">Neocities</a>.</p>
 
   <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
@@ -38,12 +45,12 @@
     <li>First thing</li>
     <li>Second thing</li>
     <li>Third thing</li>
-  </ul>
+  </ul> -->
 </div>
 
-<div align="center" data-include="/footer.html"></div>
+<include data="/footer.html"></include>
 
-<script type="text/javascript" src="/topnav.js"></script>
+<!--  -->
 <script type="text/javascript" src="/langdropdown.js"></script>
 <script type="text/javascript" src="/soundonclick.js"></script>
 <!--<script type="text/javascript" src="/langredirect.js"></script>-->
