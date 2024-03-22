@@ -1,0 +1,1 @@
+Thumbnails should be 640x480, cropped or otherwise, in order to maintain consistency.

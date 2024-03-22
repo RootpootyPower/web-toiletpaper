@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Requirements</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/comic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/csi.js"></script>
+  <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+  </head>
+  <body>
+  
+<p data-include="/topnav.html"></p> 
+
+<div id="maincontent">
+  
+  <h1>Minimum Requirements</h1>
+    
+  <p>To find out what it takes to run this website on your favorite devices, select an option from the dropdown below:</p>
+ <div>
+            <select>
+                <option>Select</option>
+              <optgroup label="Windows">
+                <option value="2000">Windows 2000 (Service Pack 4 + KernelEx)</option>
+                <option value="XP">Windows XP (Service Pack 3)</option>
+                <option value="Vista">Windows Vista</option>
+                <option value="7">Windows 7</option>
+                <option value="8">Windows 8/8.1</option>
+                <option value="10">Windows 10/11</option>
+              </optgroup>
+              <optgroup label="Video Game Consoles">
+              <option value="3DS">Nintendo 3DS Family of Systems</option>
+              </optgroup>
+            </select>
+        </div>
+            <div class="2000 GFG"
+                 style="margin-top: 20px; margin-bottom: 10px;">
+                 
+             <table style="width:100%">
+  <tr>
+    <th>Absolute Minimum</th>
+    <th>Recommended</th>
+    <th>Recommended Browsers</th>
+  </tr>
+  <tr>
+    <td>CPU: <br>RAM: <br>Display resolution: <br></td>
+    <td>CPU: <br>RAM: <br>Display resolution: <br></td>
+    <td><a href="https://www.mypal-browser.org/">Ba</a></td>
+  </tr>
+</table>
+
+<p> Want a Toilet Paper website experience of your own, without putting in the effort? Grab a VHD image <a href="https://archive.org/download/windows-2000-sp-4-kernel-ex/Windows%202000%20%28SP4%20_%20KernelEx%29.vhd">here</a>, compatible with Virtualbox, VMWare, or even on real hardware!</p>
+</div>
+        <div>
+            <div class="XP GFG"
+                 style="margin-top: 20px; margin-bottom: 10px;">
+                 
+             <table style="width:100%">
+  <tr>
+    <th>Absolute Minimum</th>
+    <th>Recommended</th>
+    <th>Recommended Browsers</th>
+  </tr>
+  <tr>
+    <td>CPU: Pentium or compatible, 233MHz<br>RAM: 128MB<sup>1</sup><br>Display resolution: 800x600<br></td>
+    <td>CPU: Pentium or compatible, 300MHz<br>RAM: 128MB<sup>1</sup><br>Display resolution: 1024x768<br></td>
+    <td><a href="https://www.mypal-browser.org/">Mypal 68 or newer</a><br><a href="https://github.com/win32ss/supermium">Supermium</a></td>
+  </tr>
+</table>
+<p><sup>1</sup>Video playback is very slow with this much memory
+            </div>
+            <div class="Vista GFG" 
+                 style="padding: 30px;
+                        margin-top: 30px;
+                        width :60%;
+                        background:green">
+                <strong>Vista</strong> 
+              is a general purpose programming language
+            </div>
+            <div class="7 GFG" 
+                 style="padding: 30px;
+                        margin-top: 30px;
+                        width :60%;
+                        background:green">
+                <strong>Python</strong> 
+              is a widely used general-purpose,
+              high level programming language.
+            </div>
+            <div class="8 GFG"
+                 style="padding: 30px;
+                        margin-top: 30px;
+                        width :60%;
+                        background:green">
+                <strong>Java</strong> 
+              is a most popular programming language for many years.
+            </div>
+                <div class="10 GFG"
+                 style="padding: 30px;
+                        margin-top: 30px;
+                        width :60%;
+                        background:green">
+                <strong>10</strong> 
+              is a most popular programming language for many years.
+            </div>
+             <div class="3DS GFG"
+                 style="padding: 30px;
+                        margin-top: 30px;
+                        width :60%;
+                        background:green">
+                <strong>please work</strong> 
+              is a most popular programming language for many years.
+            </div>
+        </div> 
+  </div>
+
+<div align="center" data-include="/footer.html"></div>
+
+<script type="text/javascript" src="/topnav.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("select").on('change', function() {
+                    $(this).find(
+                        "option:selected").each(function() {
+                        $(".2000").css('display', (
+                        this.value == '2000') ? 'block' : 'none');
+                        $(".XP").css('display', (
+                          this.value == 'XP') ? 'block' : 'none');
+                        $(".Vista").css('display', (
+                          this.value == 'Vista') ? 'block' : 'none');
+                        $(".7").css('display', (
+                          this.value == '7') ? 'block' : 'none');
+                        $(".8").css('display', (
+                          this.value == '8') ? 'block' : 'none');
+                        $(".10").css('display', (
+                          this.value == '10') ? 'block' : 'none');
+                        $(".3DS").css('display', (
+                        this.value == '3DS') ? 'block' : 'none');
+                    });
+                }).change();
+            });
+        </script>
+  </body>
+</html>
