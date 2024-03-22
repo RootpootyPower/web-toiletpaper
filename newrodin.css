@@ -1,0 +1,10 @@
+/* sets font */
+  body {
+    font-family: "New_Rodin";
+    font-size: 100%;
+  }
+  
+  @font-face {
+  font-family: 'New_Rodin';
+  src: url(/fonts/newrodin.otf);
+  }

@@ -1,0 +1,21 @@
+#blog {
+width: 92%;
+background-color: #0bdf26;
+border: 5px solid #147a21;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+}
+
+h1 {
+text-align: center  
+}
+
+h2 {
+text-align: center  
+}
+
+h3 {
+text-align: center  
+}

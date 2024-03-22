@@ -1,0 +1,9 @@
+/* sets font */
+  body {
+    font-family: "Comic_Sans_MS"
+  }
+  @font-face {
+  font-family: 'Comic_Sans_MS';
+  src: url(/fonts/comic.ttf);
+  }
+

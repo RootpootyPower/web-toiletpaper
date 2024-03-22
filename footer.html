@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.dropbtn {
+  background-color: #ff91b5;
+  color: white;
+  padding: 14px;
+  font-size: 14px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff:
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ba597a;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  min-width: 143.25px;
+  max-width: 143.25px;
+  max-height: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 6px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+</style>
+</head>
+
+<footer id="footer">
+<p align="center"><a href="/about/sitecredits.html">Credits</a> &nbsp;&nbsp; <a href="/about/minimumreqs.html">Minimum Requirements</a></p> 
+
+<!--<div class="dropdown">-->
+  <!--<button onclick="myFunction()" class="dropbtn">Select a language</button>-->
+  <!--<div id="myDropdown" class="dropdown-content">-->
+  <!--<a href="/lang/ar/index.html">اَلْعَرَبِيَّةُ</a>-->
+  <!--<a href="/lang/ar-eg/index.html">العامية المصرية</a>-->
+  <!--<a href="/lang/az-fa/index.html">آذربایجان دیلی</a>-->
+  <!--<a href="/lang/fa/index.html">فارسی</a>-->
+  <!--<a href="/lang/ha/index.html">هَرْشَن هَوْسَ</a>-->
+  <!--<a href="/lang/kk-ar/index.html">قازاقشا</a>-->
+  <!--<a href="/lang/ku/index.html">کوردیնն</a>-->
+  <!--<a href="/lang/pa-pk/index.html">پن٘جابی</a>-->
+  <!--<a href="/lang/ps/index.html">پښتو</a>-->
+  <!--<a href="/lang/sd/index.html">سنڌي</a>-->
+  <!--<a href="/lang/sw-ar/index.html">كِيْسْوَاحِيْلِيْ</a>-->
+  <!--<a href="/lang/uz-ar/index.html">اۉزبېک تیلی</a>-->
+  <!--<a href="/lang/he/index.html">עִבְרִית</a>-->
+  <!--<a href="/lang/yi/index.html">ייִדיש-טײַטש</a>-->
+  <!--<a href="/lang/am/index.html">አማርኛ</a>-->
+  <!--<a href="/lang/iu/index.html">ᐃᓄᒃᑎᑐᑦ</a>-->
+  <!--<a href="/lang/bn/index.html">বাংলা</a>-->
+  <!--<a href="/lang/hi/index.html">हिन्दी</a>-->
+  <!--<a href="/lang/kn/index.html">ಕನ್ನಡ</a>-->
+  <!--<a href="/lang/ne/index.html">नेपाली</a>-->
+  <!--<a href="/lang/pa-in/index.html">ਪੰਜਾਬੀली (ਭਾਰਤ)</a>-->
+  <!--<a href="/lang/ta/index.html">தமிழ்</a>-->
+  <!--<a href="/lang/te/index.html">తెలుగు</a>-->
+  <!--<a href="/lang/sa/index.html">संस्कृतम्</a>-->
+  <!--<a href="/lang/jv/index.html">ꦧꦱꦗꦮ</a>-->
+  <!--<a href="/lang/km/index.html">ភាសាខ្មែរ</a>-->
+  <!--<a href="/lang/lo/index.html">ພາສາລາວ</a>-->
+  <!--<a href="/lang/my/index.html">မြန်မာစာວ</a>-->
+  <!--<a href="/lang/su/index.html">ᮘᮞᮞᮥᮔ᮪ᮓ</a>-->
+  <!--<a href="/lang/th/index.html">ภาษาไทย</a>-->
+  <!--<a href="/lang/hy/index.html">հայերէն/հայերեն</a>-->
+  <!--<a href="/lang/az-ru/index.html"Азәрбајҹан</a>-->
+  <!--<a href="/lang/be/index.html">беларуская мова</a>-->
+  <!--<a href="/lang/kk/index.html">қазақша</a>-->
+  <!--<a href="/lang/mk/index.html">македонски</a>-->
+  <!--<a href="/lang/mn/index.html">монгол хэл</a>-->
+  <!--<a href="/lang/ru/index.html">Русский</a>-->
+  <!--<a href="/lang/sr/index.html">српски језик</a>-->
+  <!--<a href="/lang/tg/index.html">Тоҷикӣ</a>-->
+  <!--<a href="/lang/uk/index.html">українська мова</a>-->
+  <!--<a href="/lang/uz-cr/index.html">Ўзбекча</a>-->
+  <!--<a href="/lang/ja/index.html">日本語</a>-->
+  <!--<a href="/lang/ko/index.html">한국어</a>-->
+  <!--<a href="/lang/zh-cn/index.html">普通话 (中华人民共和国)</a>-->
+  <!--<a href="/lang/zh-hk/index.html">廣東話 (香港)</a>-->
+  <!--<a href="/lang/zh-sg/index.html">华语 (新加坡共和国)</a>-->
+  <!--<a href="/lang/zh-tw/index.html">國語 (中華民國)</a>-->
+  <!--<a href="/lang/so/index.html">Af Soomaali</a>-->
+  <!--<a href="/lang/om/index.html">Afaan Oromoo</a>-->
+  <!--<a href="/lang/af/index.html">Afrikaans</a>-->
+  <!--<a href="/lang/ig/index.html">Ásụ̀sụ́ Ìgbò</a>-->
+  <!--<a href="/lang/az/index.html">Azərbaycan</a>-->
+  <!--<a href="/lang/id/index.html">Bahasa Indonesia</a>-->
+  <!--<a href="/lang/ms/index.html">Bahasa Melayu</a>-->
+  <!--<a href="/lang/jv-la/index.html">basa Jawa</a>-->
+  <!--<a href="/lang/su/index.html">basa Sunda</a>-->
+  <!--<a href="/lang/ca/index.html">català</a>-->
+  <!--<a href="/lang/cs/index.html">čeština</a>-->
+  <!--<a href="/lang/cy/index.html">Cymraeg</a>-->
+  <!--<a href="/lang/da/index.html">Dansk</a>-->
+  <!--<a href="/lang/de/index.html">Deutsch</a>-->
+  <!--<a href="/lang/da/index.html">Diné bizaad</a>-->
+  <!--<a href="/lang/el/index.html">Ελληνικά</a>-->
+  <!--<a href="/lang/yo/index.html">Èdè Yorùbá</a>-->
+  <!--<a href="/lang/et/index.html">eesti keel</a>-->
+  <!--<a href="/lang/en/index.html">English</a>-->
+  <!--<a href="/lang/es/index.html">Español</a>-->
+  <!--<a href="/lang/es-la/index.html">Español (de América Latina)</a>-->
+  <!--<a href="/lang/eu/index.html">euskara</a>-->
+  <!--<a href="/lang/fr/index.html">Français</a>-->
+  <!--<a href="/lang/fr-ca/index.html">Français (Canada)</a>-->
+  <!--<a href="/lang/ff/index.html">Fulfulde</a>-->
+  <!--<a href="/lang/ga/index.html">Gaeilge</a>-->
+  <!--<a href="/lang/gd/index.html">Gàidhlig</a>-->
+  <!--<a href="/lang/sm/index.html">Gagana faʻa Sāmoa</a>-->
+  <!--<a href="/lang/gl/index.html">galego</a>-->
+  <!--<a href="/lang/hr/index.html">Hrvatski</a>-->
+  <!--<a href="/lang/iu-la/index.html">inuktitut</a>-->
+  <!--<a href="/lang/zu/index.html">isiZulu</a>-->
+  <!--<a href="/lang/is/index.html">íslenska</a>-->
+  <!--<a href="/lang/it/index.html">Italiano</a>-->
+  <!--<a href="/lang/sw/index.html">Kiswahili</a>-->
+  <!--<a href="/lang/ht/index.html">kreyòl ayisyen</a>-->
+  <!--<a href="/lang/la/index.html">Latīnum</a>-->
+  <!--<a href="/lang/lv/index.html">latviešu valoda</a>-->
+  <!--<a href="/lang/lb/index.html">Lëtzebuergesch</a>-->
+  <!--<a href="/lang/lt/index.html">Lietuvių kalba</a>-->
+  <!--<a href="/lang/ro/index.html">Limba română</a>-->
+  <!--<a href="/lang/hu/index.html">magyar</a>-->
+  <!--<a href="/lang/mt/index.html">Malti</a>-->
+  <!--<a href="/lang/mi/index.html">Māori</a>-->
+  <!--<a href="/lang/nl/index.html">Nederlands</a>-->
+  <!--<a href="/lang/no/index.html">Norsk</a>-->
+  <!--<a href="/lang/uz/index.html">Oʻzbekcha</a>-->
+  <!--<a href="/lang/pl/index.html">Polski</a>-->
+  <!--<a href="/lang/pt/index.html">Português</a>-->
+  <!--<a href="/lang/pt-br/index.html">Português (Brasil)</a>-->
+  <!--<a href="/lang/kk-la/index.html">qazaqşa</a>-->
+  <!--<a href="/lang/qu/index.html">Runa Simi</a>-->
+  <!--<a href="/lang/sq/index.html">Shqipja</a>-->
+  <!--<a href="/lang/sk/index.html">Slovenčina</a>-->
+  <!--<a href="/lang/sl/index.html">Slovenščina</a>-->
+  <!--<a href="/lang/sr/index.html">srpski jezik</a>-->
+  <!--<a href="/lang/fi/index.html">suomi</a>-->
+  <!--<a href="/lang/sv/index.html">Svenska</a>-->
+  <!--<a href="/lang/tl/index.html">Tagalog</a>-->
+  <!--<a href="/lang/vi/index.html">Tiếng Việt</a>-->
+  <!--<a href="/lang/tg/index.html">Tojikī</a>-->
+  <!--<a href="/lang/tr/index.html">Türkçe</a>-->
+  <!--</div>-->
+<!--</div>-->
+
+<p>©2024 Toilet Paper Production Team, a division of Rootpooty Power!.</p>
+ <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://www.youtube.com/@toiletpaperproductionteam">Toilet Paper</a>, as well as its original characters, titles, logos and music by <span property="cc:attributionName">Toilet Paper Production Team, a division of Rootpooty Power!</span> are licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0.<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+ <p>For more information about how Toilet Paper is licensed and how derivative works must be licensed, see <a href="/about/license.html">this page</a>.</p>
+ <p>The text of this website is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+ <p>The contents of this website are publicly available on <a href="https://github.com/RootpootyPower/web-toiletpaper">GitHub</a>, including any translations, and are licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License V3</a></p>
+ <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Attribution ShareAlike 4.0" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>&nbsp;<a href="https://violetcassette.neocities.org"><img alt="Designed by violetcassette" src="/images/design-vc.png"></a>&nbsp;<a href="https://web.archive.org/web/19991013111309/http://mtv.com:80/"><img alt="Only on MTV" src="/images/mtv.png"></a>&nbsp;<a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img alt="GNU General Public License v3" src="/images/gpl.png"></a></p>
+</footer>
+</html>
