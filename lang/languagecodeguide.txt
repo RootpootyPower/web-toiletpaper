@@ -2,15 +2,23 @@ Sorted by A-Z (in the ISO 639-1 code list)
 
 af - Afrikaans
 am - Amharic
-ar - Arabic
+ar - Arabic (this version of the site would be based on Modern Standard Arabic or whatever we can come up with)
 ar-eg - Arabic (Egypt)
+ar-iq - Arabic (Iraq)
+ar-lb - Arabic (Lebanon)
+ar-ma - Arabic (Morrocco)
+ar-ps - Arabic (Palestine)
+ar-sa - Arabic (Saudi Arabia)
+ar-sd - Arabic (Sudan)
 az - Azerbaijani
 az-ru - Azerbaijani (Russia)
 az-fa - Azerbaijani (Iran/Iraq)
 be - Belarusian
+bho - Bhojpuri
 bg - Bulgarian
 bn - Bengali
 ca - Catalan
+cr - Cree
 cs - Czech
 cy - Welsh
 da - Danish
@@ -18,6 +26,14 @@ de - German
 el - Greek
 en - English (for viewing from international locale)
 es - Spanish
+es-ar - Spanish (Argentinian)
+es-cl - Spanish (Chile)
+es-co - Spanish (Colombia)
+es-cu - Spanish (Cuba)
+es-es - Spanish (Spain)
+es-mx - Spanish (Mexico)
+es-py - Spanish (Paraguay)
+es-us - Spanish (United States)
 et - Estonian
 eu - Basque
 fa - Farsi
@@ -25,9 +41,10 @@ ff - Fula
 fi - Finnish
 fr - French
 fr-ca - French (Canada)
-ga - Irish
+ga - Irish Gaelic
 gd - Scots Gaelic
 gl - Galician
+gu - Gujarati
 ha - Hausa
 he - Hebrew
 hi - Hindi
@@ -73,6 +90,7 @@ pl - Polish
 ps - Pashto
 pt - Portuguese
 pt-br - Portuguese (Brazil)
+pt-mo - Portuguese (Macau)
 qu - Quechua
 ro - Romanian
 ru - Russian
@@ -105,8 +123,9 @@ uz-cr - Uzbek (Cryllic script)
 vi - Vietnamese
 yi - Yiddish
 yo - Yoruba
-zh-cn - Chinese (People's Republic of China)
-zh-hk - Chinese (Hong Kong)
-zh-sg - Chinese (Singapore)
-zh-tw - Chinese (Taiwan)
+zh-cn - Chinese (People's Republic of China) (approximates Mandarin with Simplified & Traditional characters, whenever they're needed)
+zh-hk - Chinese (Hong Kong) (approximates Cantonese with Traditional characters)
+zh-sg - Chinese (Singapore) (approximates Mandarin with Simplified characters)
+zh-tw - Chinese (Taiwan) (approximates Mandarin with Traditional characters)
+zh-mo - Chinese (Macau) (approximates Cantonese with Traditional characters)
 zu - Zulu
