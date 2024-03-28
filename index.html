@@ -13,6 +13,19 @@
   <body>
 
 <include data="/topnav.html"></include>
+<noscript>
+  <header>
+    <h1>This website requires Javascript!</h1>
+    <h2>If you can't enable it, simply click the links below for each page:</h2>
+    <div class="links">
+      <a href="/about/">About</a>
+      <a href="/characters/">Characters</a>
+      <a href="/games/">Games</a>
+      <a href="/comics/">Comics</a>
+      <a href="/watch/">Watch</a>
+    </div>
+  </header>
+</noscript>
 
 <div id="maincontent">
 
@@ -22,30 +35,21 @@
     <div class="left">
       <p class="desc">Toilet Paper is the best show ever. Trust us, we would know. It's like an object show if it wasn't an object show and was good.</p>
       <p class="desc">Latest videos:</p>
+      <noscript>
+        <div class="video">
+          <div class="nojs">
+            <h2>Enable Javascript to watch</h2>
+          </div>
+        </div>
+      </noscript>
       <include data="yt.html"></include>
-      <div class="desc links">
+      <div class="links">
         <a href="https://www.youtube.com/@toiletpaperproductionteam">YouTube</a>
         <a href="https://twitter.com/toiletpaper_pt">Twitter</a>
       </div>
     </div>
     <iframe class="right" frameBorder="0" src="/blog/index.html"></iframe>
   </div>
-
-  <!--
-  <p>I love Windows XP web development <a href="https://neocities.org">Neocities</a>.</p>
-
-  <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
-
-  <p>Testing animated PNGs for icons:</p>
-  <img src="/test.png">
-
-  <p>Here's how to make a list:</p>
-
-  <ul>
-    <li>First thing</li>
-    <li>Second thing</li>
-    <li>Third thing</li>
-  </ul> -->
 </div>
 
 <include data="/footer.html"></include>

@@ -57,7 +57,17 @@ a, a:visited {
   text-align: center;
 }
 
-.video iframe {
+/* noscript text box */
+.video .nojs {
+  width: 320px;
+  height: 180px;
+  background-color: rgb(118, 12, 63);
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.video iframe, .video .nojs {
   max-width: 85%;
 }
 
@@ -76,7 +86,9 @@ a, a:visited {
 
 .links {
   text-align: center;
+  font-size: 20px;
   margin: 5px;
+  margin-bottom: 15px;
 }
 
 .links a {
@@ -117,16 +129,11 @@ h2 {
   text-align: center
 }
 
-footer {
+footer, noscript header {
   background-color: #0bdf26;
   border: 5px solid #147a21;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
+  margin: 5px auto;
   width: 920px;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
 }
 
 #icondiv {
@@ -148,7 +155,7 @@ footer {
   #topnavdiv {
     width: 870px;
   }
-  #footer {
+  #footer, noscript header {
     width: 870px;
   }  
   #topnavdiv img, #topnavdiv a {
@@ -163,7 +170,7 @@ footer {
   #topnavdiv {
     width: 820px;
   }
-  #footer {
+  #footer, noscript header {
     width: 820px;
   }
   #topnavdiv img, #topnavdiv a {
@@ -178,7 +185,7 @@ footer {
   #topnavdiv {
     width: 770px;
   }
-  #footer {
+  #footer, noscript header {
     width: 770px;
   }
   #topnavdiv img, #topnavdiv a {
@@ -193,7 +200,7 @@ footer {
   #topnavdiv {
     width: 720px;
   }
-  #footer{
+  #footer, noscript header {
     width: 720px;
   }
   #topnavdiv img, #topnavdiv a {
@@ -208,7 +215,7 @@ footer {
   #topnavdiv {
     width: 670px;
   }
-  #footer {
+  #footer, noscript header {
     width: 670px;
   }  
   #topnavdiv img, #topnavdiv a {
@@ -223,7 +230,7 @@ footer {
   #topnavdiv {
     width: 620px;
   }
-  #footer {
+  #footer, noscript header {
     width: 620px;
   }
   #topnavdiv img, #topnavdiv a {
@@ -253,7 +260,7 @@ footer {
   #topnavdiv {
     width: 570px;
   }
-  #footer {
+  #footer, noscript header {
     width: 570px;
   }
   #topnavdiv img, #topnavdiv a {
@@ -269,7 +276,7 @@ footer {
     width: calc(100vw - 40px);
     flex-wrap: wrap;
   }
-  #footer {
+  #footer, noscript header {
     width: calc(100vw - 40px);
   }
 
