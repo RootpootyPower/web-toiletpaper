@@ -1,0 +1,26 @@
+#blog {
+width: 92%;
+background-color: #eff315;
+border: 5px solid #aa9d25;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+}
+
+h1 {
+text-align: center  
+}
+
+h2 {
+text-align: center  
+}
+
+h3 {
+text-align: center  
+}
+
+.date {
+    color: #00396b;
+    font-style: italic;
+}
