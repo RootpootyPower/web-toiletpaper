@@ -26,7 +26,7 @@ de - German
 el - Greek
 en - English (for viewing from international locale)
 es - Spanish
-es-ar - Spanish (Argentinia)
+es-ar - Spanish (Argentina)
 es-cl - Spanish (Chile)
 es-co - Spanish (Colombia)
 es-cu - Spanish (Cuba)
