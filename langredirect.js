@@ -9,6 +9,6 @@ shortLang = shortLang.split('-')[0];
 if (shortLang.indexOf('_') !== -1)
 shortLang = shortLang.split('_')[0];
 
-// update with the following format when more laocalizations go live
+// update with the following format when more localizations go live
 // if(shortLang == 'de' || shortLang == 'ja')
 //window.location.replace('./lang/' + shortLang + '/index.html');
