@@ -11,4 +11,4 @@ shortLang = shortLang.split('_')[0];
 
 // update with the following format when more localizations go live
 // if(shortLang == 'de' || shortLang == 'ja')
-//window.location.replace('./lang/' + shortLang + '/index.html');
+// window.location.replace('/lang/' + shortLang + location.pathname);
