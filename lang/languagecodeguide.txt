@@ -1,4 +1,5 @@
-Sorted by A-Z (in the ISO 639-1 code list)
+Sorted by A-Z (in the ISO 639 code list)
+A lot of these dialect decisions are based on maps from Wikipedia so take them with a grain of salt
 
 af - Afrikaans
 am - Amharic
@@ -49,7 +50,7 @@ ha - Hausa
 he - Hebrew
 hi - Hindi
 hr - Croatian
-ht - Haitian
+ht - Haitian Creole
 hu - Hungarian
 hy - Armenian
 id - Indonesian
