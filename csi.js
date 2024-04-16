@@ -21,7 +21,7 @@ window.onload = function() {
                 }
 
                 var response = data.responseText;
-                if (source == "/footer.html") { // change mute button based on status
+                if (source.search("/footer.html") >= 0) { // change mute button based on status
                     response = muteText(response);
                 }
 

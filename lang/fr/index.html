@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toilet Paper</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/comic.css">
+    <link rel="stylesheet" href="/blog.css">
+    <script src="/csi.js"></script>
+  </head>
+  <body>
+
+<include data="/topnav.html"></include>
+<noscript>
+  <header>
+    <h1>Ce site web requiert Javascript !</h1>
+    <h2>Si vous ne pouvez pas l'activer, veuillez cliquez sur les liens ci-dessous :</h2>
+    <div class="links">
+      <a href="/about/">À propos</a>
+      <a href="/characters/">Personnages</a>
+      <a href="/games/">Jeux</a>
+      <a href="/comics/">Comics</a>
+      <a href="/watch/">Regarder</a>
+    </div>
+  </header>
+</noscript>
+
+<div id="maincontent">
+
+  <h1>Bienvenue chez le site officiel de Toilet Paper !</h1>
+  
+  <div class="flexbox">
+    <div class="left">
+      <p class="desc">Toilet Paper est la meilleure série de tous les temps. Faites-nous confiance, nous le savons. C'est comme un object show mais si c'était bon.</p>
+      <p class="desc">Vidéos les plus récentes :</p>
+      <noscript>
+        <div class="video">
+          <div class="nojs">
+            <h2>Activez Javascript pour regarder</h2>
+          </div>
+        </div>
+      </noscript>
+      <include data="/yt.html"></include>
+      <div class="links">
+        <a href="https://www.youtube.com/@toiletpaperproductionteam">YouTube</a>
+        <a href="https://twitter.com/toiletpaper_pt">Twitter</a>
+      </div>
+    </div>
+    <iframe class="right" frameBorder="0" src="/blog/index.html"></iframe>
+  </div>
+</div>
+
+<include data="/footer.html"></include>
+  </body>
+</html>
