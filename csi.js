@@ -26,6 +26,9 @@ window.onload = function() {
                 }
 
                 location.outerHTML = response;
+                if (source.search("/footer.html") >= 0) { // AAAAAAAAAAAAAAAAAAAAAAAAA
+                    localizeFooter();
+                }
             }
         }
 
@@ -40,10 +43,16 @@ window.onload = function() {
 
 // intercept mute button text
 function muteText(response) {
-    if (getMuted()) {
-        return response.replace("MUTECLASS", "on").replace("MUTETEXT", "Muted");
+    var shortLang = getLang();
+
+    if (false) {
+        // im not figuring this out right now.
     } else {
-        return response.replace("MUTECLASS", "off").replace("MUTETEXT", "Mute");
+        if (getMuted()) {
+            return response.replace("MUTECLASS", "on").replace("MUTETEXT", "Muted");
+        } else {
+            return response.replace("MUTECLASS", "off").replace("MUTETEXT", "Mute");
+        }
     }
 }
 
@@ -61,12 +70,34 @@ function muteButton() {
 
     if (!getMuted()) { // unset or false
         mute();
-        btn.innerHTML = "Muted";
         btn.className = "on";
+
+        var shortLang = getLang();
+        if (shortLang != null) {
+            fetch(`/txt/footer/mute/${shortLang}.txt`)
+            .then((response) => response.text())
+            .then((data) => {
+                btn.innerHTML = data.split("\n")[1];
+            });
+            return;
+        }
+
+        btn.innerHTML = "Muted";
     } else { // true
         unmute();
-        btn.innerHTML = "Mute";
         btn.className = "off";
+
+        var shortLang = getLang();
+        if (shortLang != null) {
+            fetch(`/txt/footer/mute/${shortLang}.txt`)
+            .then((response) => response.text())
+            .then((data) => {
+                btn.innerHTML = data.split("\n")[0];
+            });
+            return;
+        }
+
+        btn.innerHTML = "Mute";
     }
 }
 
@@ -95,10 +126,57 @@ function unmute() {
 function myTopnav() {
     var x = document.getElementById("topnavdiv");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  }
+}
 
-  
+// locale shit begins here. i wish there was a better way to do this
+
+function getLang() {
+    var path = window.location.pathname;
+    if (path.search("lang") != -1) {
+        if (path.search("/en/") != -1) {
+            return null;
+        }
+        return path.substring(6, 8);
+    }
+
+    return null;
+}
+
+
+function localizeFooter() {
+    // god
+    shortLang = getLang();
+    if (shortLang == null) {
+        return;
+    }
+
+    fetch(`/txt/footer/${shortLang}.txt`)
+    .then((response) => {
+        if (!response.ok) { // error
+            throw new Error("Error 1337: no localization lol fuck you");
+        } else {
+            return response.text();
+        }
+    })
+    .then((data) => replaceText(data))
+    .catch((err) => {
+        var error = document.createElement("p");
+        error.innerHTML = err.message;
+        var footer = document.getElementById("footer");
+        footer.insertBefore(error, footer.firstChild);
+    });
+
+    function replaceText(data) {
+        var lines = data.split("\n");
+
+        var ids = ["shitlinks", "copyright", "licencing", "contents", "buttons"];
+
+        for (let i = 0; i < ids.length; i++) {
+            document.querySelector("#footer #" + ids[i]).innerHTML = lines[i];
+        }
+    }
+}

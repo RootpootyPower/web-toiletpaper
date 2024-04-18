@@ -136,6 +136,10 @@ footer, noscript header {
   width: 920px;
 }
 
+footer p {
+  padding: 0 15px;
+}
+
 #icondiv {
   display: none;
 }
