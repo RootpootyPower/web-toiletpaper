@@ -1,0 +1,10 @@
+/* sets font */
+body {
+    font-family: "Soei_Kakupoptai";
+    font-size: 100%;
+  }
+  
+  @font-face {
+  font-family: 'Soei_Kakupoptai';
+  src: url(/fonts/HGSoeiKakupoptai.ttf);
+  }
