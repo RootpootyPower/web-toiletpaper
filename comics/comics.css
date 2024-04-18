@@ -1,0 +1,39 @@
+#comics img {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#comics, .controls {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#comics {
+    margin: 15px 0;
+}
+
+.controls button, .controls input {
+    font-size: 15px;
+    font-family: 'Comic Sans MS', 'Comic Sans', "Comic_Sans_MS";
+    background-color: #85eefc;
+    border: 5px solid #317aa4;
+}
+
+.controls button:hover {
+    background-color: #65d0de;
+    border: 5px solid #216790;
+}
+
+.controls button {
+    width: 60px;
+}
+
+.controls input {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.comiclist {
+    text-align: center;
+}
