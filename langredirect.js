@@ -1,3 +1,5 @@
+/* enable when there are any actual working localizations
+
 let lang = window.navigator.languages ? window.navigator.languages[0] : null;
 lang = lang || window.navigator.language || window.navigator.browserLanguage 
            || window.navigator.userLanguage;
@@ -11,9 +13,9 @@ shortLang = shortLang.split('_')[0];
 
 var languages = ["de","ja","fr"];
 
-// update with the following format when more localizations go live
+
 for (let l of languages) {
     if (l == shortLang) {
         window.location.replace('/lang/' + shortLang + location.pathname);
     }
-}
+} */

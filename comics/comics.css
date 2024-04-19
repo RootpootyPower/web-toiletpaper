@@ -20,6 +20,10 @@
     border: 5px solid #317aa4;
 }
 
+.controls input, .controls div {
+    display: inline-block;
+}
+
 .controls button:hover {
     background-color: #65d0de;
     border: 5px solid #216790;
@@ -39,4 +43,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 450px) {
+    #numinput {
+        display: none;
+    }
+
+    #comics img {
+        width: 100%;
+    }
 }

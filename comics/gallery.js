@@ -6,12 +6,12 @@ if (length > 1) {
     var controls = document.createElement("div");
     controls.id = "controls";
     controls.className = "controls";
-    controls.innerHTML =
-    `<button onclick="first();">«</button>
-    <button onclick="back();">back</button>
+    controls.innerHTML = `
+    <div><button onclick="first();">«</button>
+    <button onclick="back();">back</button></div>
     <input id="numinput" type="number" min="1" max="${length}" value="1">
-    <button onclick="forward();">next</button>
-    <button onclick="last();">»</button>
+    <div><button onclick="forward();">next</button>
+    <button onclick="last();">»</button></div>
     `;
     gallery.parentElement.insertBefore(controls, gallery);
     var input = document.querySelector("#controls #numinput");
