@@ -4,13 +4,14 @@ A lot of these dialect decisions are based on maps from Wikipedia so take them w
 af - Afrikaans
 am - Amharic
 ar - Arabic (this version of the site would be based on Modern Standard Arabic or whatever we can come up with)
-ar-eg - Arabic (Egypt)
-ar-iq - Arabic (Iraq)
-ar-lb - Arabic (Lebanon)
-ar-ma - Arabic (Morrocco)
-ar-ps - Arabic (Palestine)
-ar-sa - Arabic (Saudi Arabia)
-ar-sd - Arabic (Sudan)
+ar-eg - Arabic (Egypt, Egyptian)
+ar-iq - Arabic (Iraq,Mesopatamian)
+ar-lb - Arabic (Lebanon, Levantine)
+ar-ma - Arabic (Morrocco, Maghrebi)
+ar-sa - Arabic (Saudi Arabia, Najdi)
+ar-sa-acw - Arabic (Saudi Arabia, Hejazi)
+ar-sd - Arabic (Sudan, Sudanese)
+ar-ye - Arabic (Yemen, Yemeni)
 az - Azerbaijani
 az-ru - Azerbaijani (Russia)
 az-fa - Azerbaijani (Iran/Iraq)
@@ -27,14 +28,19 @@ de - German
 el - Greek
 en - English (for viewing from international locale)
 es - Spanish
-es-ar - Spanish (Argentina)
-es-cl - Spanish (Chile)
-es-co - Spanish (Colombia)
-es-cu - Spanish (Cuba)
-es-es - Spanish (Spain)
-es-mx - Spanish (Mexico)
-es-py - Spanish (Paraguay)
-es-us - Spanish (United States)
+es-ar - Spanish (Argentina, Rioplatense)
+es-cl - Spanish (Chile, Chilean)
+es-co - Spanish (Colombia, [Inland] Columbian)
+es-cr - Spanish (Costa Rica, Costa Rican)
+es-cu - Spanish (Cuba, Caribbean)
+es-do - Spanish (Dominican Republic, Dominican)
+es-es - Spanish (Spain, Peninsular)
+es-gt - Spanish (Guatemala, Guatemalan)
+es-mx - Spanish (Mexico, Mexican)
+es-py - Spanish (Paraguay, Paraguayan)
+es-sv - Spanish (El Salvador, Central American)
+es-ve - Spanish (Venezuela, Venezuelan)
+es-us - Spanish (United States, I Don't Fucking Know)
 et - Estonian
 eu - Basque
 fa - Farsi
@@ -77,6 +83,7 @@ lv - Latvian
 mi - Māori
 mk - Macedonian
 mn - Mongolian
+mr - Marathi
 ms - Malay
 mt - Maltese
 my - Burmese
@@ -124,9 +131,10 @@ uz-cr - Uzbek (Cryllic script)
 vi - Vietnamese
 yi - Yiddish
 yo - Yoruba
-zh-cn - Chinese (People's Republic of China) (approximates Mandarin with Simplified & Traditional characters, whenever they're needed)
-zh-hk - Chinese (Hong Kong) (approximates Cantonese with Traditional characters)
-zh-sg - Chinese (Singapore) (approximates Mandarin with Simplified characters)
-zh-tw - Chinese (Taiwan) (approximates Mandarin with Traditional characters)
+zh-cn - Chinese (People's Republic of China, Standard Mandarin) (approximates Mandarin with Simplified & Traditional characters, whenever they're needed)
+zh-cn-wuu Chinese (People's Republic of China, Wu)
+zh-hk - Chinese (Hong Kong, Yue) (approximates Cantonese with Traditional characters)
+zh-sg - Chinese (Singapore, Standard Mandarin) (approximates Mandarin with Simplified characters)
+zh-tw - Chinese (Taiwan, Min) (approximates Mandarin with Traditional characters)
 zh-mo - Chinese (Macau) (approximates Cantonese with Traditional characters)
 zu - Zulu
