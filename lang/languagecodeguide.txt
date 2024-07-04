@@ -1,140 +1,176 @@
 Sorted by A-Z (in the ISO 639 code list)
 A lot of these dialect decisions are based on maps from Wikipedia so take them with a grain of salt
 
+Versions which are very relevant (either based on their appearance in SpongeBob or their notability on TheDubDB):
 af - Afrikaans
-am - Amharic
-ar - Arabic (this version of the site would be based on Modern Standard Arabic or whatever we can come up with)
 ar-eg - Arabic (Egypt, Egyptian)
-ar-iq - Arabic (Iraq,Mesopatamian)
 ar-lb - Arabic (Lebanon, Levantine)
-ar-ma - Arabic (Morrocco, Maghrebi)
-ar-sa - Arabic (Saudi Arabia, Najdi)
 ar-sa-acw - Arabic (Saudi Arabia, Hejazi)
-ar-sd - Arabic (Sudan, Sudanese)
-ar-ye - Arabic (Yemen, Yemeni)
-az - Azerbaijani
-az-ru - Azerbaijani (Russia)
-az-fa - Azerbaijani (Iran/Iraq)
+as - Assamese
+az - Azerbaijani (Azerbaijan)
 be - Belarusian
-bho - Bhojpuri
 bg - Bulgarian
 bn - Bengali
+bs - Bosnian
 ca - Catalan
-cr - Cree
+ckb - Kurdish (Northern)/Sorani
 cs - Czech
 cy - Welsh
 da - Danish
 de - German
 el - Greek
-en - English (for viewing from international locale)
-es - Spanish
-es-ar - Spanish (Argentina, Rioplatense)
-es-cl - Spanish (Chile, Chilean)
-es-co - Spanish (Colombia, [Inland] Columbian)
-es-cr - Spanish (Costa Rica, Costa Rican)
-es-cu - Spanish (Cuba, Caribbean)
-es-do - Spanish (Dominican Republic, Dominican)
-es-es - Spanish (Spain, Peninsular)
-es-gt - Spanish (Guatemala, Guatemalan)
-es-mx - Spanish (Mexico, Mexican)
-es-py - Spanish (Paraguay, Paraguayan)
-es-sv - Spanish (El Salvador, Central American)
-es-ve - Spanish (Venezuela, Venezuelan)
-es-us - Spanish (United States, I Don't Fucking Know)
+es-es - Spanish (Spain, Peninsular/Castillian)
+es - Spanish ("Latin America")
 et - Estonian
 eu - Basque
-fa - Farsi
-ff - Fula
+fa - Farsi/Persian
 fi - Finnish
-fr - French
+fr - French (France)
 fr-ca - French (Canada)
 ga - Irish Gaelic
 gd - Scots Gaelic
 gl - Galician
 gu - Gujarati
-ha - Hausa
 he - Hebrew
 hi - Hindi
 hr - Croatian
-ht - Haitian Creole
 hu - Hungarian
 hy - Armenian
 id - Indonesian
-ig - Igbo
 is - Icelandic
 it - Italian
-iu - Inuktitut
-iu-la - Inuktitut (Latin script)
 ja - Japanese
-jv - Javanese
-jv-la - Javanese (Latin script)
+ka - Georgian
 kk - Kazakh
-kk-ar - Kazakh (Arabic script)
-kk-la - Kazakh (Latin script)
-km - Khmer
 kn - Kannada
 ko - Korean
-ku - Kurdish
-la - Latin
+ku - Kurdish (Central)/Kurmanji
+ky - Kyrgyz
 lb - Luxembourgish
-lo - Lao
 lt - Lithuanian
 lv - Latvian
 mi - Māori
 mk - Macedonian
+ml - Malayam
 mn - Mongolian
 mr - Marathi
 ms - Malay
-mt - Maltese
-my - Burmese
-ne - Nepali
 nl - Dutch
 no - Norwegian
-nv - Navajo
-om - Oromo
+or - Odia
 pa-in - Punjabi (India)
-pa-pk - Punjabi (Pakistan)
 pl - Polish
-ps - Pashto
 pt - Portuguese
 pt-br - Portuguese (Brazil)
-pt-mo - Portuguese (Macau)
-qu - Quechua
 ro - Romanian
 ru - Russian
-sa - Sanskrit
-sd - Sindhi
+si - Sinhala
 sk - Slovak
 sl - Slovene
-sm - Samoan
-so - Somali
 sq - Albanian
 sr - Serbian
-sr-la - Serbian (Latin script)
-su - Sundanese
-su-la - Sundanese (Latin script)
+st - Sotho
 sv - Swedish
-sw - Swahili
-sw-ar - Swahili (Arabic script)
 ta - Tamil
 te - Telugu
-tg - Tajik
-tg-la - Tajik (Latin script)
 th - Thai
-tl - Tagalog
+tl - Tagalog (thedubdb always refers to this as filipino but i ignore it)
 tr - Turkish
 uk - Ukranian
 ur - Urdu
 uz - Uzbek
-uz-ar - Uzbek (Arabic script)
-uz-cr - Uzbek (Cryllic script)
 vi - Vietnamese
-yi - Yiddish
-yo - Yoruba
+vlca - Valencian
+xh - Xhosa
 zh-cn - Chinese (People's Republic of China, Standard Mandarin) (approximates Mandarin with Simplified & Traditional characters, whenever they're needed)
-zh-cn-wuu Chinese (People's Republic of China, Wu)
 zh-hk - Chinese (Hong Kong, Yue) (approximates Cantonese with Traditional characters)
+zu - Zulu
+
+Versions with speculative relevance:
+ar-iq - Arabic (Iraq, Mesopatamian)
+ar-ma - Arabic (Morrocco, Maghrebi)
+ar-sa - Arabic (Saudi Arabia, Najdi)
+ar-sd - Arabic (Sudan, Sudanese)
+ar-ye - Arabic (Yemen, Yemeni)
+az-ru - Azerbaijani (Russia)
+az-fa - Azerbaijani (Iran/Iraq)
+bal - Balochi
+es-ar - Spanish (Argentina, Rioplatense)
+es-cl - Spanish (Chile, Chilean)
+es-co - Spanish (Colombia, [Inland] Columbian)
+es-cr - Spanish (Costa Rica, Central American)
+es-cu - Spanish (Cuba, Cuban)
+es-do - Spanish (Dominican Republic, Dominican)
+es-ec - Spanish (Ecuador, Ecuadorian)
+es-mx - Spanish (Mexico, Mexican)
+es-pe - Spanish (Peru, Peruvian)
+es-ve - Spanish (Venezuela, Venezuelan)
+glk - Gilaki
+kab - Kabyle
+pa-pk - Punjabi (Pakistan)
+ps - Pashto
+ug - Ughyur
+zh-cn-wuu Chinese (People's Republic of China, Wu)
 zh-sg - Chinese (Singapore, Standard Mandarin) (approximates Mandarin with Simplified characters)
 zh-tw - Chinese (Taiwan, Min) (approximates Mandarin with Traditional characters)
 zh-mo - Chinese (Macau) (approximates Cantonese with Traditional characters)
-zu - Zulu
+
+Versions with very little current relevance, tested using the SpongeBob Dub Relevance Test:
+NOTE: these dubs should NOT be ruled out. many of these languages have millions of speakers, and a lot of these languages tend to be of African origin. if I didn't think of these languages when initially creating this document, no American executive would ever think about even GLANCING at a list of languages within the continent. also, some of these entries are websit-exclusive
+
+ak - Akan
+am - Amharic
+ber - Berber
+bho - Bhojpuri
+bm - Bambara
+cr - Cree
+en - English (for viewing from international locale)
+ff - Fula
+gn - Guarani
+ha - Hausa
+ht - Haitian Creole
+ig - Igbo
+iu - Inuktitut
+iu-la - Inuktitut (Latin script)
+jv - Javanese
+jv-la - Javanese (Latin script)
+kg - Kongo
+ki - Kikuyu
+kin - Kinyarwanda (Rwanda-Rundi, Rwanda)
+kk-ar - Kazakh (Arabic script)
+kk-la - Kazakh (Latin script)
+km - Khmer
+la - Latin
+ln - Lingala
+lo - Lao
+lua - Luba-Kasai
+mg - Malagasy
+mos - Mooré/Mossi
+mt - Maltese
+my - Burmese
+ne - Nepali
+nv - Navajo
+ny - Chichewa
+om - Oromo
+pt-mo - Portuguese (Macau)
+qu - Quechua
+run - Rundi (Rwanda-Rundi, Burundi)
+sd - Sindhi
+sm - Samoan
+sn - Shona
+so - Somali
+sr-la - Serbian (Latin script)
+su - Sundanese
+su-la - Sundanese (Latin script)
+sw - Swahili
+sw-ar - Swahili (Arabic script)
+tg - Tajik
+tg-la - Tajik (Latin script)
+ti - Tigrinya
+tn - Tswana
+umb - Umbundu
+uz-ar - Uzbek (Arabic script)
+uz-cr - Uzbek (Cryllic script)
+wo - Wolof
+yi - Yiddish
+yo - Yoruba
