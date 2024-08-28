@@ -57,11 +57,46 @@ function muteText(response) {
 }
 
 // topnav audio
-function fart() {
+function fartC() {
     if (getMuted()) { // muted
         return;
     }
-    document.getElementById("sfxHover").play();
+    document.getElementById("sfxHoverC").play();
+}
+
+function fartE() {
+    if (getMuted()) { // muted
+        return;
+    }
+    document.getElementById("sfxHoverE").play();
+}
+
+function fartFSharp() {
+    if (getMuted()) { // muted
+        return;
+    }
+    document.getElementById("sfxHoverFSharp").play();
+}
+
+function fartG() {
+    if (getMuted()) { // muted
+        return;
+    }
+    document.getElementById("sfxHoverG").play();
+}
+
+function fartA() {
+    if (getMuted()) { // muted
+        return;
+    }
+    document.getElementById("sfxHoverA").play();
+}
+
+function fartHighC() {
+    if (getMuted()) { // muted
+        return;
+    }
+    document.getElementById("sfxHoverHighC").play();
 }
 
 // button press
