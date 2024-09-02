@@ -56,47 +56,38 @@ function muteText(response) {
     }
 }
 
-// topnav audio
-function fartC() {
-    if (getMuted()) { // muted
-        return;
-    }
-    document.getElementById("sfxHoverC").play();
-}
+// initialize fart sounds (c lydian pentatonic scale)
+var C = new Audio("/audio/topnav/C.mp3");
+var E = new Audio("/audio/topnav/E.mp3");
+var Fsharp = new Audio("/audio/topnav/F_sharp.mp3");
+var G = new Audio("/audio/topnav/G.mp3");
+var A = new Audio("/audio/topnav/A.mp3");
+var C2 = new Audio("/audio/topnav/high_C.mp3");
 
-function fartE() {
-    if (getMuted()) { // muted
-        return;
-    }
-    document.getElementById("sfxHoverE").play();
-}
+// topnav audio, with different notes
+function fart(note) {
+    if (getMuted()) return;
 
-function fartFSharp() {
-    if (getMuted()) { // muted
-        return;
+    switch(note) {
+        case 'C':
+            C.play();
+            break;
+        case 'E':
+            E.play();
+            break;
+        case 'F#':
+            Fsharp.play();
+            break;
+        case 'G':
+            G.play();
+            break;
+        case 'A':
+            A.play();
+            break;
+        case 'C2':
+            C2.play();
+            break;
     }
-    document.getElementById("sfxHoverFSharp").play();
-}
-
-function fartG() {
-    if (getMuted()) { // muted
-        return;
-    }
-    document.getElementById("sfxHoverG").play();
-}
-
-function fartA() {
-    if (getMuted()) { // muted
-        return;
-    }
-    document.getElementById("sfxHoverA").play();
-}
-
-function fartHighC() {
-    if (getMuted()) { // muted
-        return;
-    }
-    document.getElementById("sfxHoverHighC").play();
 }
 
 // button press
