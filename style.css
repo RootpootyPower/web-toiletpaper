@@ -11,6 +11,12 @@ a, a:visited {
   color: #000093; /* contrasty */
 }
 
+/* saturate image links on hover */
+
+a:hover img {
+  filter: brightness(0.5) saturate(2);
+}
+
 .desc {
   font-size: 20px;
 }

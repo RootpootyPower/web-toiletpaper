@@ -139,10 +139,6 @@ li {
     background-color: #e46c94;
 }
 
-a:hover img {
-    filter: brightness(0.5) saturate(2);
-}
-
 /* fix long names */
 @media screen and (min-width: 650px) {
     .infobox {
