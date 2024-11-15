@@ -1,0 +1,10 @@
+.gamecontainer {
+    width: 100%;
+    text-align: center;
+}
+
+#game {
+    height: 600px;
+    width: 800px;
+    max-width: 100%;
+}
