@@ -13,7 +13,12 @@
     margin: 15px 0;
 }
 
-.controls button, .controls input {
+.playbutton {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.controls button, .controls input, #play {
     font-size: 15px;
     font-family: 'Comic Sans MS', 'Comic Sans', "Comic_Sans_MS";
     background-color: #85eefc;
@@ -24,7 +29,7 @@
     display: inline-block;
 }
 
-.controls button:hover {
+.controls button:hover, #play:hover{
     background-color: #65d0de;
     border: 5px solid #216790;
 }
