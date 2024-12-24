@@ -21,6 +21,10 @@ text-align: center
 }
 
 .date {
-    color: #00396b;
+    color: #00315E;
     font-style: italic;
 }
+
+a, a:visited {
+    color: #000093;
+  }
