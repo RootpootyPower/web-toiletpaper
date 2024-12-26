@@ -158,8 +158,30 @@ function myTopnav() {
     }
 }
 
-// locale shit begins here. i wish there was a better way to do this
+// topnav icon switching
 
+// the Date.now() following a question mark and the end of the animated icon URLs
+// allows them to start at frame 1 as opposed to resuming from whatever position 
+// they're at in the background
+let agent = navigator.userAgent;
+
+function charactersOff() {
+    document.getElementById('charactersAVIF').srcset ='/images/icons/characters.avif';
+    document.getElementById('charactersFB').src ='/images/icons/characters.png';
+}
+
+function charactersHover() {
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) { // check for animated AVIF incompatible Firefox versions
+        // force fallback
+        document.getElementById('charactersAVIF').srcset ='/images/icons/hover/characters.gif?' + Date.now();
+    } else {
+        // use AVIF
+        document.getElementById('charactersAVIF').srcset ='/images/icons/hover/characters.avif?' + Date.now();   
+    }
+    document.getElementById('charactersFB').src ='/images/icons/hover/characters.gif?' + Date.now();
+}
+
+// locale shit begins here. i wish there was a better way to do this
 function getLang() {
     var path = window.location.pathname;
     if (path.search("lang") != -1) {
