@@ -11,14 +11,18 @@ shortLang = shortLang.split('_')[0];
 
 var languages = ["de","ja","fr"];
 
+let found = false; // found language flag
 for (let l of languages) {
     if (l == shortLang) {
+        found = true;
         fetch(`/txt/not found/${shortLang}.txt`)
         .then((response) => response.text())
         .then((data) => replaceText(data));
         break;
     }
 }
+if (!found)
+    console.log(`Language '${shortLang}' not available`);
 
 function replaceText(data) {
     var lines = data.split("\n");

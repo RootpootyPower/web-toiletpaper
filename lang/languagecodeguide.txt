@@ -1,6 +1,7 @@
 Sorted by A-Z (in the ISO 639 code list)
 A lot of these dialect decisions are based on maps from Wikipedia so take them with a grain of salt
 
+ISO-639-1:
 Versions which are very relevant (either based on their appearance in SpongeBob or their notability on TheDubDB):
 af - Afrikaans
 ar-eg - Arabic (Egypt, Egyptian)
@@ -174,3 +175,7 @@ uz-cr - Uzbek (Cryllic script)
 wo - Wolof
 yi - Yiddish
 yo - Yoruba
+
+ISO 639-3:
+I literally just like toki pona. ni li tan taso pi wile jo
+tok - toki pona

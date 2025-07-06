@@ -184,14 +184,13 @@ function charactersHover() {
 // locale shit begins here. i wish there was a better way to do this
 function getLang() {
     var path = window.location.pathname;
-    if (path.search("lang") != -1) {
-        if (path.search("/en/") != -1) {
-            return null;
-        }
-        return path.substring(6, 8);
+
+    // filter out english or no localization
+    if (path.search("lang") == -1 || path.search("/en/") != -1) {
+        return null;
     }
 
-    return null;
+    return (path.split("/"))[2];
 }
 
 
@@ -221,7 +220,7 @@ function localizeFooter() {
     function replaceText(data) {
         var lines = data.split("\n");
 
-        var ids = ["shitlinks", "copyright", "licencing", "contents", "buttons"];
+        var ids = ["shitlinks", "copyright", "licencing", "contents"];
 
         for (let i = 0; i < ids.length; i++) {
             document.querySelector("#footer #" + ids[i]).innerHTML = lines[i];
