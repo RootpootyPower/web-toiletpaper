@@ -71,6 +71,10 @@ li {
     height: 210px;
 }
 
+.show a {
+    cursor: pointer;
+}
+
 /* these classes mean nothing i swear */
 
 .host:hover, .o:hover {
