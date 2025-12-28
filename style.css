@@ -16,6 +16,13 @@ body {
  a:hover img {
    filter: brightness(0.5) saturate(2);
  }
+
+ /* topnav images */
+
+ a:hover picture {
+  filter: brightness(0.75) saturate(1.5);
+ }
+ 
  
  .desc {
    font-size: 20px;
@@ -51,7 +58,7 @@ body {
    color: white;
  }
  
- .topnav .icon {
+ .topnav #hamburger {
    display: none;
    cursor: pointer;
  }
@@ -311,7 +318,7 @@ body {
    .topnav a:not(:first-child) {
      display: none;
    }
-   .topnav a.icon {
+   .topnav a#hamburger {
      display: block;
    }
    .topnav.responsive a {
