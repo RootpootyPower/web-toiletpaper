@@ -12,9 +12,7 @@ export function getCookie(n:string): string | null | undefined {
 export function setCookie(n:string, v:string) {
     document.cookie = `${n}=${v}; path=/`;
 }
-
-// cookie with an expiry date
-export function setCookieTime(n:string, v:string, t:Date) {
+export function setCookieExpiry(n:string, v:string, t:Date) {
     document.cookie = `${n}=${v}; path=/; expires=${t.toUTCString()}`;
 }
 
@@ -87,13 +85,10 @@ export function getBrowserInfo():browserInfo {
 export function checkAnimatedAvifSupport():boolean {
     // so it doesn't have to run the whole check every time you hover over something
     if (getCookie("aavif") != null) {
-        console.log("cookie");
         return getCookie("aavif") == "true";
     }
-    console.log("check");
 
-    let info = getBrowserInfo(), s:boolean;
-    console.log(info);
+    let info = getBrowserInfo(), s:boolean = false;
 
     switch (info.browser) {
         case "Firefox":
@@ -113,14 +108,11 @@ export function checkAnimatedAvifSupport():boolean {
         case "SamsungBrowser":
             s = info.version >= 14;
             break;
-        default:
-            s = false; // assume
     }
-    console.log(s);
 
-    // this shouldn't change very often
-    let nextYear = new Date();
-    nextYear.setFullYear(nextYear.getFullYear()+1);
-    setCookieTime("aavif", s.toString(), nextYear)
+    // shouldnt change often, so cookie lasts a year
+    let nextYear = new Date(Date.now()+31536000000); // 365 days in ms. good enough
+    setCookieExpiry("aavif", s.toString(), nextYear)
+
     return s;
 }

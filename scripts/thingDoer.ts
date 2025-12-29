@@ -25,14 +25,15 @@ function includeHandler(data:string, element:HTMLElement) {
     let d:string|null = element.getAttribute("data");
     if (d == null) return;
 
-    // replace mute button text in footer
-    if (d.search("footer") >= 0)
-        data = changeMuteText(data);
-
     element.outerHTML = data;
+    console.log(d);
 
-    if (d.search("topnav") >= 0)
-        handleTopnav();
+    switch (d.split(".")[0]) {
+        case "/topnav":
+            handleTopnav(); break;
+        case "/footer":
+            handleFooter(); break;
+    }
 }
 
 function hover(nav:Element, i:number) {
@@ -85,6 +86,42 @@ function fart(n:number) {
         return;
     fartSounds[n]?.play();
 }
+
+function handleFooter() {
+    console.log("AA");
+    let mutebtn = document.getElementById("footermute");
+    if (mutebtn == null) return;
+
+    let mute = Utils.getCookie("mute");
+    if (mute == "true") {
+        mutebtn.className = "on";
+        mutebtn.innerHTML = "Muted";
+    } else {
+        mutebtn.className = "off";
+        mutebtn.innerHTML = "Mute";
+        if (mute == null)
+            Utils.setCookie("mute","false");
+    }
+
+    mutebtn.addEventListener("click", () => muteButton(mutebtn));
+}
+
+function muteButton(mutebtn:HTMLElement) {
+    console.log(mutebtn);
+    let mute = Utils.getCookie("mute");
+    if (mute == "true") {
+        mutebtn.className = "off";
+        mutebtn.innerHTML = "Mute";
+        Utils.setCookie("mute","false");
+    } else {
+        mutebtn.className = "on";
+        mutebtn.innerHTML = "Muted";
+        Utils.setCookie("mute","true");
+    }
+}
+
+
+// probably change how this works entirely:
 
 // intercept mute button text
 function changeMuteText(response:string) {
