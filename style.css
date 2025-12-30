@@ -342,7 +342,7 @@ justify-content: space-around;
 #footermute {
   font-size: 15px;
   font-family: 'Comic Sans MS', 'Comic Sans', "Comic_Sans_MS";
-  float: left;
+  position: relative;
 }
 
 .off {
@@ -365,6 +365,30 @@ justify-content: space-around;
   border: 5px solid #216790;
 }
 
+#shitlinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 #shitlinks a {
   padding: 0 15px;
+}
+
+#mutecontainer {
+  position: relative;
+  width: 0;
+  height: 0;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  #mutecontainer {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  #shitlinks a {
+    padding-top: 15px;
+  }
 }

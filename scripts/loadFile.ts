@@ -1,6 +1,6 @@
 // get file contents and pass it to handler
-export function loadHTML(source:string|null, handler:Function) {
-    if (source == null || !source.includes(".html")) {
+export function loadFile(source:string|null, handler:Function) {
+    if (source == null) {
         console.error("Invalid source: " + source);
         return;
     }
@@ -14,6 +14,8 @@ export function loadHTML(source:string|null, handler:Function) {
         let response:string;
         if (req.status == 200 && (response = req.responseText))
             handler(response);
+        else if (req.status == 404)
+            handler("404");
         else
             console.error(`Error loading ${source}; status: ${req.status}`);
     }

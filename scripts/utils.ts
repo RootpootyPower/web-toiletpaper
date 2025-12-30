@@ -1,3 +1,5 @@
+import { loadFile } from "./loadFile.js"
+
 export function getCookie(n:string): string | null | undefined {
     let cookies = document.cookie.split("; ");
     for (let c of cookies) {
@@ -16,7 +18,9 @@ export function setCookieExpiry(n:string, v:string, t:Date) {
     document.cookie = `${n}=${v}; path=/; expires=${t.toUTCString()}`;
 }
 
+//
 // browser version stuff
+//
 
 type browserInfo = {
     os:string,
@@ -84,9 +88,9 @@ export function getBrowserInfo():browserInfo {
 
 export function checkAnimatedAvifSupport():boolean {
     // so it doesn't have to run the whole check every time you hover over something
-    if (getCookie("aavif") != null) {
-        return getCookie("aavif") == "true";
-    }
+    let a = getCookie("aavif");
+    if (a != null)
+        return a == "true";
 
     let info = getBrowserInfo(), s:boolean = false;
 

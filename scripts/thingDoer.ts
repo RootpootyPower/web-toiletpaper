@@ -1,8 +1,9 @@
 // handles everything csi.js used to. import things because that's like. infinitely more
 // manageable than one several hundred line long javascript file
 
-import { loadHTML } from "./loadHTML.js"
+import { loadFile } from "./loadFile.js"
 import * as Utils from "./utils.js"
+import * as Lang from "./langutils.js"
 
 const fartSounds:HTMLAudioElement[] = [];
 
@@ -12,8 +13,8 @@ window.onload = () => {
     
     for (let i of includes) {
         let source = i.getAttribute("data");
-        
-        loadHTML(source, (r:string) => includeHandler(r, i));
+        if (source?.includes("html"))
+            loadFile(source, (r:string) => includeHandler(r, i));
     }
 
     // initialize fart sounds (c lydian pentatonic) (simpsons)
@@ -30,9 +31,12 @@ function includeHandler(data:string, element:HTMLElement) {
 
     switch (d.split(".")[0]) {
         case "/topnav":
-            handleTopnav(); break;
+            handleTopnav();
+            break;
         case "/footer":
-            handleFooter(); break;
+            handleFooter();
+            Lang.localize("footer", "footer");
+            break;
     }
 }
 
@@ -88,7 +92,6 @@ function fart(n:number) {
 }
 
 function handleFooter() {
-    console.log("AA");
     let mutebtn = document.getElementById("footermute");
     if (mutebtn == null) return;
 
@@ -104,30 +107,39 @@ function handleFooter() {
     }
 
     mutebtn.addEventListener("click", () => muteButton(mutebtn));
+
+    // language dropdown
+    let dropdown = <HTMLSelectElement>document.getElementById("langdropdown");
+    if (dropdown == null) return;
+    // set selection to current language
+    dropdown.value = Lang.getLangAndRedirect();
+
+    dropdown.addEventListener("change", () => {
+        let v = dropdown.value;
+        if (v == "select" || Lang.supportedLangs.indexOf(v) < 0) return;
+        Lang.redirect(v);
+    });
 }
 
-function muteButton(mutebtn:HTMLElement) {
+// click event
+async function muteButton(mutebtn:HTMLElement) {
     console.log(mutebtn);
     let mute = Utils.getCookie("mute");
     if (mute == "true") {
+        if (Lang.getPageLang() == "en")
+            mutebtn.innerHTML = "Mute";
+        else
+            mutebtn.innerHTML = await Lang.getMuteString("off");
+
         mutebtn.className = "off";
-        mutebtn.innerHTML = "Mute";
         Utils.setCookie("mute","false");
     } else {
+        if (Lang.getPageLang() == "en")
+            mutebtn.innerHTML = "Muted";
+        else
+            mutebtn.innerHTML = await Lang.getMuteString("on");
+
         mutebtn.className = "on";
-        mutebtn.innerHTML = "Muted";
         Utils.setCookie("mute","true");
-    }
-}
-
-
-// probably change how this works entirely:
-
-// intercept mute button text
-function changeMuteText(response:string) {
-    if (Utils.getCookie("mute") == "false") {
-        return response.replace("MUTECLASS", "on").replace("MUTETEXT", "Muted");
-    } else {
-        return response.replace("MUTECLASS", "off").replace("MUTETEXT", "Mute");
     }
 }

@@ -1,3 +1,6 @@
+title
 Page Introuvable
-La page à laquelle vous essayez acceder a été déplacé, supprimé ou bien n'existe pas.<br><br>Si vous n'êtes pas rédirigé, cliquez <a href="/index.html">ici</a> pour aller a la page d'acceuil.
+main
+La page à laquelle vous essayiez acceder a été déplacé, supprimé ou bien n'existe pas.<br><br>Si vous n'êtes pas rédirigé, cliquez <a href="/lang/fr/">ici</a> pour aller a la page d'acceuil.
+copyright
 ©2026 Toilet Paper Production Team, une filiale de Rootpooty Power!.
