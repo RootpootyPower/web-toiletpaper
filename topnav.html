@@ -1,18 +1,32 @@
 <header>
-  <!--set image rendering to smooth to prevent higher-res animation
-  from having different text edges than the static icons-->
-  <div class="topnav" id="topnavdiv" style="image-rendering: smooth;">
+  <div class="topnav" id="topnavdiv" style="image-rendering: smooth;"> <!--prevent higher-res animations from having different text edges than the static icons-->
     <div id="navlinks">
-      <a href="/"><img src="/images/icons/home.png" alt="Home" id="homeicon" onmouseover="this.src='/images/icons/hover/home.png'; fart('C'); " onmouseout="this.src='/images/icons/home.png';"></a>
-      <a href="/extras/"><img src="/images/icons/extras.png" alt="Extras" id="extrasicon" onmouseover="this.src='/images/icons/hover/extras.png'; fart('E'); " onmouseout="this.src='/images/icons/extras.png';"></a>
-      <a href="/characters/"><picture onmouseover="charactersHover(); fart('F#');" onfocus="charactersHover(); fart('F#');" onmouseout="charactersOff()"> <source type="image/avif" id="charactersAVIF" alt="Characters" srcset="/images/icons/characters.avif"><img id="charactersFB" alt="Characters" src="/images/icons/characters.png"></picture></a>
-      <a href="/games/"><img src="/images/icons/games.png" alt="Games" id="gamesicon" onmouseover="this.src='/images/icons/hover/games.png'; fart('G'); " onmouseout="this.src='/images/icons/games.png';"></a>
-      <a href="/comics/"><img src="/images/icons/comics.png" alt="Comics" id="comicsicon" onmouseover="this.src='/images/icons/hover/comics.png'; fart('A'); " onmouseout="this.src='/images/icons/comics.png';"></a>
-      <a href="/watch/"><img src="/images/icons/watch.png" alt="Watch" id="watchicon" onmouseover="this.src='/images/icons/hover/watch.png'; fart('C2'); " onmouseout="this.src='/images/icons/watch.png';"></a>
+      <a id="navicon" href="/"><picture onmouseover="homeHover(); fart('C');" onfocus="homeHover(); fart('C');" onmouseout="homeOff()">
+        <source type="image/avif" id="homeAVIF" alt="Home" srcset="/images/icons/home.avif">
+        <img id="homeFB" alt="Home" src="/images/icons/home.png"></picture></a>
 
+      <a id="navicon" href="/characters/"><picture onmouseover="charactersHover(); fart('E');" onfocus="charactersHover(); fart('E');" onmouseout="charactersOff()">
+        <source type="image/avif" id="charactersAVIF" alt="Characters" srcset="/images/icons/characters.avif">
+        <img id="charactersFB" alt="Characters" src="/images/icons/characters.png"></picture></a>
+
+      <a id="navicon" href="/games/"><picture onmouseover="gamesHover(); fart('F#');" onfocus="gamesHover(); fart('F#');" onmouseout="gamesOff()">
+        <source type="image/avif" id="gamesAVIF" alt="Games" srcset="/images/icons/games.avif">
+        <img id="gamesFB" alt="Games" src="/images/icons/games.png"></picture></a>
+
+      <a id="navicon" href="/comics/"><picture onmouseover="comicsHover(); fart('G');" onfocus="comicsHover(); fart('G');" onmouseout="comicsOff()">
+        <source type="image/avif" id="comicsAVIF" alt="Comics" srcset="/images/icons/comics.avif">
+        <img id="comicsFB" alt="Comics" src="/images/icons/comics.png"></picture></a>
+      
+      <a id="navicon" href="/extras/"><picture onmouseover="extrasHover(); fart('A');" onfocus="extrasHover(); fart('A');" onmouseout="extrasOff()">
+        <source type="image/avif" id="extrasAVIF" alt="Extras" srcset="/images/icons/extras.avif">
+        <img id="extrasFB" alt="Extras" src="/images/icons/extras.png"></picture></a>
+
+      <a id="navicon" href="/watch/"><picture onmouseover="watchHover(); fart('C2');" onfocus="watchHover(); fart('C2');" onmouseout="watchOff()">
+        <source type="image/avif" id="watchAVIF" alt="Watch" srcset="/images/icons/watch.avif">
+        <img id="watchFB" alt="Watch" src="/images/icons/watch.png"></picture></a>
     </div>
     <div id="icondiv">
-      <a class="icon" onclick="myTopnav()"><img src="/images/icons/hamburger.png" alt="More"></a>
+      <a class="icon" onclick="responsiveTopnav()"><img src="/images/icons/hamburger.png" alt="More"></a>
       </div>
   </div>
 </header>

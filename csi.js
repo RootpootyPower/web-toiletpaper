@@ -64,6 +64,7 @@ var G = new Audio("/audio/topnav/G.mp3");
 var A = new Audio("/audio/topnav/A.mp3");
 var C2 = new Audio("/audio/topnav/high_C.mp3");
 
+
 // topnav audio, with different notes
 function fart(note) {
     if (getMuted()) return;
@@ -148,8 +149,8 @@ function unmute() {
     document.cookie = "mute=false; path=/";
 }
 
-// topnav thing
-function myTopnav() {
+// switch to responsive width topnav on mobile
+function responsiveTopnav() {
     var x = document.getElementById("topnavdiv");
     if (x.className === "topnav") {
         x.className += " responsive";
@@ -160,10 +161,24 @@ function myTopnav() {
 
 // topnav icon switching
 
-// the Date.now() following a question mark and the end of the animated icon URLs
-// allows them to start at frame 1 as opposed to resuming from whatever position 
-// they're at in the background
+// Date.now() allows them to start at frame 1 as opposed to resuming from whatever position they're at in the background
 let agent = navigator.userAgent;
+
+function homeOff() {
+    document.getElementById('homeAVIF').srcset ='/images/icons/home.avif';
+    document.getElementById('homeFB').src ='/images/icons/home.png';
+}
+
+function homeHover() {
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) { // check for animated AVIF incompatible Firefox versions
+        // force fallback
+        document.getElementById('homeAVIF').srcset ='/images/icons/hover/home.gif?' + Date.now();
+    } else {
+        // use AVIF
+        document.getElementById('homeAVIF').srcset ='/images/icons/hover/home.avif?' + Date.now();   
+    }
+    document.getElementById('homeFB').src ='/images/icons/hover/home.gif?' + Date.now();
+}
 
 function charactersOff() {
     document.getElementById('charactersAVIF').srcset ='/images/icons/characters.avif';
@@ -171,15 +186,70 @@ function charactersOff() {
 }
 
 function charactersHover() {
-    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) { // check for animated AVIF incompatible Firefox versions
-        // force fallback
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) {
         document.getElementById('charactersAVIF').srcset ='/images/icons/hover/characters.gif?' + Date.now();
     } else {
-        // use AVIF
         document.getElementById('charactersAVIF').srcset ='/images/icons/hover/characters.avif?' + Date.now();   
     }
     document.getElementById('charactersFB').src ='/images/icons/hover/characters.gif?' + Date.now();
 }
+
+function gamesOff() {
+    document.getElementById('gamesAVIF').srcset ='/images/icons/games.avif';
+    document.getElementById('gamesFB').src ='/images/icons/games.png';
+}
+
+function gamesHover() {
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) {
+        document.getElementById('gamesAVIF').srcset ='/images/icons/hover/games.gif?' + Date.now();
+    } else {
+        document.getElementById('gamesAVIF').srcset ='/images/icons/hover/games.avif?' + Date.now();   
+    }
+    document.getElementById('gamesFB').src ='/images/icons/hover/games.gif?' + Date.now();
+}
+
+function comicsOff() {
+    document.getElementById('comicsAVIF').srcset ='/images/icons/comics.avif';
+    document.getElementById('comicsFB').src ='/images/icons/comics.png';
+}
+
+function comicsHover() {
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) {
+        document.getElementById('comicsAVIF').srcset ='/images/icons/hover/comics.gif?' + Date.now();
+    } else {
+        document.getElementById('comicsAVIF').srcset ='/images/icons/hover/comics.avif?' + Date.now();   
+    }
+    document.getElementById('comicsFB').src ='/images/icons/hover/comics.gif?' + Date.now();
+}
+
+function extrasOff() {
+    document.getElementById('extrasAVIF').srcset ='/images/icons/extras.avif';
+    document.getElementById('extrasFB').src ='/images/icons/extras.png';
+}
+
+function extrasHover() {
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) {
+        document.getElementById('extrasAVIF').srcset ='/images/icons/hover/extras.gif?' + Date.now();
+    } else {
+        document.getElementById('extrasAVIF').srcset ='/images/icons/hover/extras.avif?' + Date.now();   
+    }
+    document.getElementById('extrasFB').src ='/images/icons/hover/extras.gif?' + Date.now();
+}
+
+function watchOff() {
+    document.getElementById('watchAVIF').srcset ='/images/icons/watch.avif';
+    document.getElementById('watchFB').src ='/images/icons/watch.png';
+}
+
+function watchHover() {
+    if((agent.indexOf("Firefox/")) && (agent.substring(agent.indexOf("rv:")+3,agent.indexOf("rv:")+6) < 113)) {
+        document.getElementById('watchAVIF').srcset ='/images/icons/hover/watch.gif?' + Date.now();
+    } else {
+        document.getElementById('watchAVIF').srcset ='/images/icons/hover/watch.avif?' + Date.now();   
+    }
+    document.getElementById('watchFB').src ='/images/icons/hover/watch.gif?' + Date.now();
+}
+
 
 // locale shit begins here. i wish there was a better way to do this
 function getLang() {
@@ -220,7 +290,7 @@ function localizeFooter() {
     function replaceText(data) {
         var lines = data.split("\n");
 
-        var ids = ["shitlinks", "copyright", "licencing", "contents"];
+        var ids = ["shitlinks", "copyright", "licencing", "contents", "buttons"];
 
         for (let i = 0; i < ids.length; i++) {
             document.querySelector("#footer #" + ids[i]).innerHTML = lines[i];
