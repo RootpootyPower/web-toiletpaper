@@ -40,11 +40,11 @@ export function redirect(lang:string) {
     history.pushState(null, ""); // save current page so you can go back if you want
 
     // remove language stuff from pathname and add it back if it's not english
-    let pn = window.location.pathname.substring(1);
+    let pn = window.location.pathname;
     if (getPageLang() != "en") {
         pn = pn.substring(6+getPageLang().length);
     } if (lang != "en")
-        pn = `/lang/${lang}/${pn}`;
+        pn = `/lang/${lang}${pn}`; // pn should include slash
 
     window.location.href = window.location.origin + pn;
 }
@@ -69,7 +69,6 @@ export function localize(loc:string, file:string) {
         for (let i = 0; i < ids.length; i++) {
             if ((e=document.querySelector(`#${file} #${ids[i]}`)) != null)
                 e.innerHTML = <string>text[i];
-            console.log(e);
         }
     });
 }

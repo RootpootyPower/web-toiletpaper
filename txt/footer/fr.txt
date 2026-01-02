@@ -1,5 +1,5 @@
 shitlinks
-<a href="/about/sitecredits.html">Crédits</a><a href="/lang/fr/about/">À propos</a><a href="/about/license.html">Termes de Licence</a>
+<a href="/about/sitecredits.html">Générique</a><a href="/lang/fr/about/">À propos</a><a href="/about/license.html">Termes de Licence</a>
 copyright
 ©2026 Toilet Paper Production Team, une filiale de Rootpooty Power!.
 licence

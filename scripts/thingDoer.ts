@@ -27,7 +27,6 @@ function includeHandler(data:string, element:HTMLElement) {
     if (d == null) return;
 
     element.outerHTML = data;
-    console.log(d);
 
     switch (d.split(".")[0]) {
         case "/topnav":
@@ -69,7 +68,6 @@ function handleTopnav() {
         
         if (firstChild == null || firstChild.tagName.toLowerCase() != "picture") 
             continue;
-        console.log(firstChild);
         
         firstChild.addEventListener("mouseout", () => unhover(firstChild));
         firstChild.addEventListener("mouseover", () => hover(firstChild, i));
@@ -123,7 +121,6 @@ function handleFooter() {
 
 // click event
 async function muteButton(mutebtn:HTMLElement) {
-    console.log(mutebtn);
     let mute = Utils.getCookie("mute");
     if (mute == "true") {
         if (Lang.getPageLang() == "en")

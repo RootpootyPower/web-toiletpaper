@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator Translator</title>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/comic.css">
+	<link rel="stylesheet" href="/characters/characters.css">
+	<script src="/trans/thingDoer.js" type="module"></script>
+    <style>
+        .cont {
+            margin: 15px;
+            text-align: center;
+        }
+        #input, #output {
+            Retournerground-color: white;
+            border: 5px solid #8d7084;
+            width: 50%;
+            margin: 0 auto;
+            font-family: 'Comic Sans MS', 'Comic Sans', "Comic_Sans_MS";
+            padding: 5px;
+            height: 150px;
+        }
+
+        #output {
+            text-align: left;
+            font-family: "Courier New",Courier,monospace;
+            font-weight: bold;
+            height: 150px;
+        }
+
+        .cont p {
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+	<include data="/topnav.html"></include>
+
+	<div id="maincontent">
+		<a class="clickon" href="/characters/tpjm/calculator.html">Retourner</a>
+        <br>
+        <h2>Calculator ASCII translator</h2>
+        <noscript>
+            <style>
+                .cont {
+                    display: none;
+                }
+
+                noscript div {
+                    margin: auto 0;
+                    text-align: center;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            </style>
+            <h2>enable javascript</h2>
+            <div>
+                <img src="/images/calculator error.png">
+            </div>
+        </noscript>
+
+        <div class="cont">
+            <p>Input (text):</p>
+            <textarea id="input"></textarea>
+        </div>
+        <div class="cont">
+            <p>Output (ASCII code):</p>
+            <textarea id="output"></textarea>
+        </div>
+	</div>
+
+    <script type="module" src="/trans/translator.js"></script>
+
+	<include data="/footer.html"></include>
+
+	
+
+</body>
+</html>
