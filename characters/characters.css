@@ -107,10 +107,10 @@ li {
 }
 
 */
-.mn:hover, .lg:hover, .al:hover {
+.i:hover {
     background-color: #e46c94;
 }
-
+/*
 .pl {
     background-color: #f4782c;
 }
@@ -141,7 +141,7 @@ li {
 
 .th:hover {
     background-color: #4a2a9a;
-}
+}*/
 
 
 /* fix long names */

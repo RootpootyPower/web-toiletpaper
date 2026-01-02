@@ -1,5 +1,14 @@
-<a href="/about/sitecredits.html">Crédits</a><a href="/about/minimumreqs.html">Configuration requise</a><a href="/about/license.html">Termes de Licence</a>
+shitlinks
+<a href="/about/sitecredits.html">Générique</a><a href="/lang/fr/about/">À propos</a><a href="/about/license.html">Termes de Licence</a>
+copyright
 ©2026 Toilet Paper Production Team, une filiale de Rootpooty Power!.
+licence
 <a property="dct:title" rel="cc:attributionURL" href="https://www.youtube.com/@toiletpaperproductionteam">Toilet Paper</a>, ainsi que les personnages originels, logos et musique par <span property="cc:attributionName">Toilet Paper Production Team, une filiale de Rootpooty Power!</span> sont autorisés sous <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0.<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="Attribution"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="Partage dans les Mêmes Conditions"></a>, ainsi que la texte de ce site
-Les contenus de ce site sont disponible sur <a href="https://github.com/RootpootyPower/web-toiletpaper">GitHub</a>, et sont autorisés sous la <a href="https://www.gnu.org/licenses/gpl-3.0.fr.html">Licence publique générale GNU</a>
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Attribution Creative Commons Partage dans les Mêmes Conditions 4.0 International" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>&nbsp;<a href="https://violetcassette.nekoweb.org"><img alt="Programmé avec violetcassette" src="/images/vc-fr.png"></a>&nbsp<img src="/images/bepis-button.gif" alt="weaselovercome. BEPIS!!!">&nbsp<a href="https://www.gnu.org/licenses/gpl-3.0.fr.html"><img alt="GNU General Public License v3" src="/images/gpl.png"></a>
+contents
+Les contenus de ce site sont disponible sur <a href="https://github.com/RootpootyPower/web-toiletpaper">GitHub</a>, et sont autorisés sous la <a href="https://www.gnu.org/licenses/gpl-3.0.html">Licence publique générale GNU</a>
+buttons
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Attribution Creative Commons Partage dans les Mêmes Conditions 4.0 International" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>&nbsp;<a href="https://violetcassette.neocities.org"><img alt="Conception par violetcassette" src="/images/vc-fr.png"></a>&nbsp;<img src="/images/bepis-button.gif" alt="weaselovercome. BEPIS!!!"><a href="https://www.gnu.org/licenses/gpl-3.0.fr.html"><img alt="GNU General Public License v3" src="/images/gpl.png"></a>
+mutecontainer .on
+Couper le son
+mutecontainer .off
+Son activé

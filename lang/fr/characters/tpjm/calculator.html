@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/comic.css">
+	<link rel="stylesheet" href="/characters/characters.css">
+	<script src="/trans/thingDoer.js" type="module"></script>
+	<style>
+		#transbtn {
+			margin-left: 15px;
+			font-family: 'Comic Sans MS', 'Comic Sans', 'Comic_Sans_MS';
+			font-size: 15px;
+		}
+
+		#transbtn:not(.on) {
+			background-color: #b7ff7c;
+			border: 5px solid #69a641;
+		}
+
+		#transbtn:hover:not(.on) {
+			background-color: #8bd54f;
+			border-color: #457d1f;
+		}
+
+		.hide {
+			display: none;
+		}
+	</style>
+	<noscript>
+		<style>
+			#binary, #transbtn {
+				display: none;
+			}
+
+			#translation {
+				display: block;
+			}
+		</style>
+	</noscript>
+</head>
+<body>
+	<include data="/topnav.html"></include>
+
+	<div id="maincontent">
+		<a class="clickon" href="/characters/">Retourner</a>
+		<div class="namebox">
+			<img alt="Calculator" src="/characters/tpjm/tpjmr_icons0004.png">
+			<div class="infobox">
+				<p class="title">Calculator</p>
+				<p class="info"><b>Genre :</b> femme</p>
+				<p class="info"><b>Pronoms :</b> elle/elle</p>
+				<p class="info"><b>Âge :</b> 17</p>
+				<p class="info"><b>Violet :</b> non</p>
+			</div>
+		</div>
+
+		<button id="transbtn">Translate</button>
+		<p id="translation" class="desc hide">Sans bouche, Calculator est condamné à ne communiquer qu'avec le code ASCII en utilisant ses boutons. À cause de ça, malheureusement, la plupart des gens ne peuvent pas la comprendre, puis ils tirent profit d'elle.</p>
+		<p id="binary" class="desc" style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">83 97 110 115 32 98 111 117 99 104 101 44 32 67 97 108 99 117 108 97 116 111 114 32 101 115 116 32 99 111 110 100 97 109 110 233 32 224 32 110 101 32 99 111 109 109 117 110 105 113 117 101 114 32 113 117 39 97 118 101 99 32 108 101 32 99 111 100 101 32 65 83 67 73 73 32 101 110 32 117 116 105 108 105 115 97 110 116 32 115 101 115 32 98 111 117 116 111 110 115 46 32 192 32 99 97 117 115 101 32 100 101 32 231 97 44 32 109 97 108 104 101 117 114 101 117 115 101 109 101 110 116 44 32 108 97 32 112 108 117 112 97 114 116 32 100 101 115 32 103 101 110 115 32 110 101 32 112 101 117 118 101 110 116 32 112 97 115 32 108 97 32 99 111 109 112 114 101 110 100 114 101 44 32 112 117 105 115 32 105 108 115 32 116 105 114 101 110 116 32 112 114 111 102 105 116 32 100 39 101 108 108 101 46</p>
+		<p class="desc"><a href="calctranslator.html">Translator</a></p>
+		
+		<!-- leaving this as javascript Who Cares -->
+		<script>
+			var btn = document.getElementById("transbtn");
+			var trans = document.getElementById("translation");
+			var bin = document.getElementById("binary");
+
+			btn.addEventListener("click", () => {
+				if (trans.className == "desc hide") { // translate
+					btn.className = "on";
+					btn.innerHTML = "Translated";
+					trans.className = "desc";
+					bin.className = "desc hide";
+				} else { // undo
+					btn.className = "";
+					btn.innerHTML = "Translate";
+					trans.className = "desc hide";
+					bin.className = "desc"
+				}
+			});
+		</script>
+	</div>
+
+	<include data="/footer.html"></include>
+
+	
+
+</body>
+</html>
