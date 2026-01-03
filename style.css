@@ -375,7 +375,7 @@ justify-content: space-around;
   white-space: nowrap;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #mutecontainer {
     position: static;
     width: auto;
