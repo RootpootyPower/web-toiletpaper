@@ -17,13 +17,6 @@ a:hover img {
   filter: brightness(0.5) saturate(2);
 }
 
-/* topnav images */
-
-a:hover picture {
-  filter: brightness(0.75) saturate(1.5);
-}
-
-
 .desc {
   font-size: 20px;
 }

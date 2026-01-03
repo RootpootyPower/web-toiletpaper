@@ -2,11 +2,10 @@
   <div class="topnav" id="topnavdiv" style="image-rendering: smooth;"> <!--prevent higher-res animations from having different text edges than the static icons-->
     <div id="navlinks">
       <a href="/">
-        <img src="/images/icons/home.png" alt="Home" id="homeicon" onmouseover="this.src='/images/icons/hover/home.png'; fart('C'); " onmouseout="this.src='/images/icons/home.png';">
-      </a>
-
-      <a href="/extras/">
-        <img src="/images/icons/extras.png" alt="Extras" id="extrasicon" onmouseover="this.src='/images/icons/hover/extras.png'; fart('E'); " onmouseout="this.src='/images/icons/extras.png';">
+        <picture name="home">
+          <source type="image/avif" alt="Home" srcset="/images/icons/home.avif">
+          <img alt="Home" src="/images/icons/home.png">
+        </picture>
       </a>
 
       <a href="/characters/">
@@ -17,15 +16,31 @@
       </a>
 
       <a href="/games/">
-        <img src="/images/icons/games.png" alt="Games" id="gamesicon" onmouseover="this.src='/images/icons/hover/games.png'; fart('G'); " onmouseout="this.src='/images/icons/games.png';">
+        <picture name="games">
+          <source type="image/avif" alt="Characters" srcset="/images/icons/games.avif">
+          <img alt="Games" src="/images/icons/games.png">
+        </picture>
       </a>
 
       <a href="/comics/">
-        <img src="/images/icons/comics.png" alt="Comics" id="comicsicon" onmouseover="this.src='/images/icons/hover/comics.png'; fart('A'); " onmouseout="this.src='/images/icons/comics.png';">
+        <picture name="comics">
+          <source type="image/avif" alt="Comics" srcset="/images/icons/comics.avif">
+          <img alt="Comics" src="/images/icons/comics.png">
+        </picture>
+      </a>
+
+      <a href="/extras/">
+        <picture name="extras">
+          <source type="image/avif" alt="Extras" srcset="/images/icons/extras.avif">
+          <img alt="Extras" src="/images/icons/extras.png">
+        </picture>
       </a>
 
       <a href="/watch/">
-        <img src="/images/icons/watch.png" alt="Watch" id="watchicon" onmouseover="this.src='/images/icons/hover/watch.png'; fart('C2'); " onmouseout="this.src='/images/icons/watch.png';">
+        <picture name="watch">
+          <source type="image/avif" alt="Watch" srcset="/images/icons/watch.avif">
+          <img alt="Watch" src="/images/icons/watch.png">
+        </picture>
       </a>
 
     </div>
