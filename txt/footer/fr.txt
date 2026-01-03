@@ -9,6 +9,6 @@ Les contenus de ce site sont disponible sur <a href="https://github.com/Rootpoot
 buttons
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Attribution Creative Commons Partage dans les Mêmes Conditions 4.0 International" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>&nbsp;<a href="https://violetcassette.neocities.org"><img alt="Conception par violetcassette" src="/images/vc-fr.png"></a>&nbsp;<img src="/images/bepis-button.gif" alt="weaselovercome. BEPIS!!!"><a href="https://www.gnu.org/licenses/gpl-3.0.fr.html"><img alt="GNU General Public License v3" src="/images/gpl.png"></a>
 mutecontainer .on
-Couper le son
+Son coupé
 mutecontainer .off
-Son activé
+Couper le son
