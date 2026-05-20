@@ -291,8 +291,9 @@ justify-content: space-around;
   #footer, noscript header {
     width: 570px;
   }
-  #topnavdiv img, #topnavdiv a {
+  #topnavdiv img, #topnavdiv a, .jsgif canvas {
     height: 90px;
+    width: 90px;
   }
 }
 
